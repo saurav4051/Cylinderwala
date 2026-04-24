@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+pnpm-debug.log
+.git
+.gitignore
+README.md
+docs
+scripts
+server.out.log
+server.err.log

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CylinderWala Admin | Order dashboard</title>
+    <meta
+      name="description"
+      content="Admin dashboard for CylinderWala live orders, rider dispatch, and revenue tracking."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/admin">
+          <span class="brand-mark">CW</span>
+          <span class="brand-copy">
+            <strong>CylinderWala Admin</strong>
+            <small>Orders and delivery management</small>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="/#order">Customer site</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#fleet">Fleet</a>
+          <button class="button button-secondary nav-button" id="logout-button" type="button">
+            Logout
+          </button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero panel admin-hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Admin Dashboard</p>
+            <h1>Manage orders, delivery and payments in one place.</h1>
+            <p class="hero-text">
+              Review incoming bookings, assign riders, update payment status,
+              verify OTPs and track daily order activity.
+            </p>
+            <div class="hero-stats">
+              <article>
+                <span id="admin-dealer-label">Loading dealer...</span>
+                <small>primary dealer</small>
+              </article>
+              <article>
+                <span id="admin-rider-count">0</span>
+                <small>active riders</small>
+              </article>
+              <article>
+                <span>Realtime</span>
+                <small>dispatch updates</small>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="status-pill">Admin access only</div>
+            <h2>Quick overview</h2>
+            <div class="price-rows">
+              <div><span>Customer site</span><strong>Bookings only</strong></div>
+              <div><span>Admin page</span><strong>Orders and reports</strong></div>
+              <div><span>Updates</span><strong>Live and manual refresh</strong></div>
+            </div>
+            <div class="hero-total">
+              <span>Route</span>
+              <strong>/admin</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel dashboard-panel" id="dashboard">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Operations dashboard</p>
+              <h2>Live dispatch and revenue snapshot</h2>
+            </div>
+            <button class="button button-secondary" id="refresh-button" type="button">
+              Refresh data
+            </button>
+          </div>
+
+          <div class="kpi-grid">
+            <article>
+              <span id="kpi-live-orders">0</span>
+              <small>live orders</small>
+            </article>
+            <article>
+              <span id="kpi-paid-orders">0</span>
+              <small>paid orders</small>
+            </article>
+            <article>
+              <span id="kpi-revenue">Rs 0</span>
+              <small>platform revenue</small>
+            </article>
+            <article>
+              <span id="kpi-delivered">0</span>
+              <small>delivered orders</small>
+            </article>
+          </div>
+
+          <div class="dashboard-grid">
+            <section class="dashboard-column">
+              <div class="subpanel">
+                <div class="subpanel-header">
+                  <h3>Live orders</h3>
+                  <span class="badge" id="orders-count-badge">0 orders</span>
+                </div>
+                <div id="live-orders" class="card-stack"></div>
+              </div>
+            </section>
+
+            <section class="dashboard-column">
+              <div class="subpanel">
+                <div class="subpanel-header">
+                  <h3>Latest ledger entries</h3>
+                  <span class="badge" id="ledger-count-badge">0 entries</span>
+                </div>
+                <div id="ledger-list" class="card-stack compact"></div>
+              </div>
+              <div class="subpanel">
+                <div class="subpanel-header">
+                  <h3>Activity feed</h3>
+                  <span class="badge badge-live">Live SSE</span>
+                </div>
+                <div id="activity-feed" class="feed"></div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="panel" id="fleet">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Fleet coverage</p>
+              <h2>Rider status</h2>
+            </div>
+          </div>
+          <div id="rider-list" class="list-stack"></div>
+        </section>
+
+        <section class="panel" id="settings">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Admin settings</p>
+              <h2>Change password and recovery</h2>
+            </div>
+          </div>
+
+          <div class="settings-grid">
+            <form id="change-password-form" class="order-form single-column-form">
+              <h3 class="settings-title">Change password</h3>
+              <label>
+                Current password
+                <input name="currentPassword" type="password" required />
+              </label>
+              <label>
+                New password
+                <input name="newPassword" type="password" minlength="6" required />
+              </label>
+              <div class="submit-row">
+                <button class="button button-primary" type="submit">
+                  Update password
+                </button>
+                <span id="change-password-status" class="status-text">
+                  Choose a password that only you know.
+                </span>
+              </div>
+            </form>
+
+            <form id="recovery-settings-form" class="order-form single-column-form">
+              <h3 class="settings-title">Recovery settings</h3>
+              <label>
+                Recovery question
+                <input id="recovery-question-input" name="recoveryQuestion" required />
+              </label>
+              <label>
+                Recovery answer
+                <input name="recoveryAnswer" type="password" required />
+              </label>
+              <div class="submit-row">
+                <button class="button button-secondary" type="submit">
+                  Save recovery
+                </button>
+                <span id="recovery-settings-status" class="status-text">
+                  This answer will be used if you need to reset the password.
+                </span>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <template id="activity-item-template">
+      <article class="feed-item">
+        <strong></strong>
+        <p></p>
+        <small></small>
+      </article>
+    </template>
+
+    <script type="module" src="/admin.js"></script>
+  </body>
+</html>

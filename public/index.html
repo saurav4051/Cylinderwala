@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CylinderWala | Book your LPG refill</title>
+    <meta
+      name="description"
+      content="CylinderWala helps customers book LPG refills quickly with transparent pricing and safe doorstep delivery."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#home">
+          <span class="brand-mark">CW</span>
+          <span class="brand-copy">
+            <strong>CylinderWala</strong>
+            <small>Fast household LPG booking</small>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="#experience">Benefits</a>
+          <a href="#order">Book Now</a>
+          <a href="/admin">Admin Panel</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero panel" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">Home Delivery</p>
+            <h1>Get your LPG cylinder delivered without the wait.</h1>
+            <p class="hero-text">
+              Book your refill online, choose the services you need, and get it
+              delivered to your doorstep with OTP confirmation at handover.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#order">Book a cylinder</a>
+            </div>
+            <div class="hero-stats">
+              <article>
+                <span id="stat-radius">7 km</span>
+                <small>service radius</small>
+              </article>
+              <article>
+                <span id="stat-dealers">1</span>
+                <small>dealer partners</small>
+              </article>
+              <article>
+                <span>Safe OTP</span>
+                <small>handoff verification</small>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="status-pill">Price details</div>
+            <h2>Your booking estimate</h2>
+            <div class="price-rows" id="pricing-breakdown">
+              <div><span>Cylinder base</span><strong>Rs 900</strong></div>
+              <div><span>Convenience</span><strong>Rs 20</strong></div>
+              <div><span>Safety add-on</span><strong>Rs 30</strong></div>
+            </div>
+            <div class="hero-total">
+              <span>Estimated total</span>
+              <strong id="stat-price-total">Rs 950</strong>
+            </div>
+            <p class="microcopy">
+              Final amount depends on the services selected for your order.
+            </p>
+          </div>
+        </section>
+
+        <section class="experience-grid" id="experience">
+          <article class="panel feature-card accent-orange">
+            <p class="eyebrow">Easy booking</p>
+            <h3>Submit your order in one short form</h3>
+            <p>
+              Share your contact number, address, and preferred add-ons to place
+              a refill request in seconds.
+            </p>
+          </article>
+          <article class="panel feature-card accent-blue">
+            <p class="eyebrow">Transparent pricing</p>
+            <h3>See the breakdown before you confirm</h3>
+            <p>
+              Base price, convenience fee, and optional services stay visible so
+              there are no surprises at delivery time.
+            </p>
+          </article>
+          <article class="panel feature-card accent-gold">
+            <p class="eyebrow">Safe delivery</p>
+            <h3>Receive your cylinder with OTP verification</h3>
+            <p>
+              OTP-confirmed handoff adds an extra trust layer for families
+              receiving deliveries at home.
+            </p>
+          </article>
+        </section>
+
+        <section class="main-grid customer-grid">
+          <section class="panel order-panel" id="order">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Cylinder booking</p>
+                <h2>Book your refill</h2>
+              </div>
+              <span class="badge" id="selected-dealer-label">Dealer loading...</span>
+            </div>
+
+            <form id="order-form" class="order-form">
+              <label>
+                Full name
+                <input name="customerName" placeholder="Ananya Sharma" required />
+              </label>
+              <label>
+                Phone number
+                <input name="customerPhone" placeholder="9876501234" required />
+              </label>
+              <label class="full-width">
+                Delivery address
+                <textarea
+                  name="address"
+                  rows="3"
+                  placeholder="Flat 12, Sector 62, Noida"
+                  required
+                ></textarea>
+              </label>
+              <label>
+                Pincode
+                <input name="pincode" value="201309" maxlength="6" required />
+              </label>
+              <label>
+                Booking source
+                <select name="source">
+                  <option value="pwa">Website</option>
+                  <option value="app">App</option>
+                  <option value="quick_form">Quick form</option>
+                  <option value="whatsapp">WhatsApp</option>
+                </select>
+              </label>
+              <label>
+                Latitude
+                <input name="lat" value="28.6295" inputmode="decimal" required />
+              </label>
+              <label>
+                Longitude
+                <input name="lng" value="77.3652" inputmode="decimal" required />
+              </label>
+
+              <div class="full-width add-ons">
+                <label class="toggle">
+                  <input type="checkbox" name="premiumSafety" checked />
+                  <span>Premium safety check</span>
+                </label>
+                <label class="toggle">
+                  <input type="checkbox" name="gasBackGuarantee" checked />
+                  <span>Gas-back guarantee</span>
+                </label>
+                <label class="toggle">
+                  <input type="checkbox" name="emptyExchange" />
+                  <span>Empty cylinder exchange</span>
+                </label>
+              </div>
+
+              <label class="full-width">
+                Delivery notes
+                <input name="notes" placeholder="Call before arrival" />
+              </label>
+
+              <div class="full-width submit-row">
+                <button class="button button-primary" type="submit">
+                  Confirm booking
+                </button>
+                <span id="order-status" class="status-text">
+                  Ready to book your refill.
+                </span>
+              </div>
+            </form>
+          </section>
+
+          <aside class="side-stack">
+            <section class="panel">
+              <div class="section-heading">
+                <div>
+                  <p class="eyebrow">Dealer support</p>
+                  <h2>Service partner</h2>
+                </div>
+              </div>
+              <div id="dealer-list" class="list-stack"></div>
+            </section>
+
+            <section class="panel callout-panel">
+              <p class="eyebrow">Admin access</p>
+              <h2>Admin dashboard</h2>
+              <p class="hero-text compact-copy">
+                Order management and reports are available only on the admin side.
+              </p>
+              <a class="button button-secondary" href="/admin-login.html">Open admin login</a>
+            </section>
+          </aside>
+        </section>
+
+        <section class="panel otp-panel" id="delivery-otp-panel" hidden>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Customer delivery OTP</p>
+              <h2>Share this OTP only when your cylinder arrives</h2>
+            </div>
+            <span class="badge" id="otp-order-id">Order pending</span>
+          </div>
+          <div class="otp-grid">
+            <article class="otp-card">
+              <span class="muted">Delivery OTP</span>
+              <strong id="delivery-otp-code" class="otp-code">------</strong>
+              <p class="hero-text compact-copy">
+                Share this OTP with the delivery person only after your cylinder
+                reaches you.
+              </p>
+            </article>
+            <article class="otp-card">
+              <span class="muted">How it works</span>
+              <strong>Delivery verification</strong>
+              <p class="hero-text compact-copy">
+                The delivery is marked complete only after the correct OTP is entered.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

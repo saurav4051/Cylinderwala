@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CylinderWala Admin Login</title>
+    <meta
+      name="description"
+      content="Login page for CylinderWala admin access."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell narrow-shell">
+      <main>
+        <section class="panel login-panel">
+          <p class="eyebrow">Admin Login</p>
+          <h1 class="login-title">Sign in to manage orders</h1>
+          <p class="hero-text compact-copy">
+            Use your admin account to manage orders, riders, payments, and settings.
+          </p>
+
+          <form id="admin-login-form" class="order-form single-column-form">
+            <label>
+              Username
+              <input name="username" value="admin" placeholder="admin" required />
+            </label>
+            <label>
+              Password
+              <input name="password" type="password" placeholder="Enter password" required />
+            </label>
+            <div class="submit-row">
+              <button class="button button-primary" type="submit">
+                Login
+              </button>
+              <span id="login-status" class="status-text">
+                Enter admin credentials to continue.
+              </span>
+            </div>
+          </form>
+
+          <section class="auth-section">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Forgot password</p>
+                <h2 class="settings-title">Recover admin access</h2>
+              </div>
+            </div>
+
+            <form id="recovery-start-form" class="order-form single-column-form">
+              <label>
+                Admin username
+                <input name="username" value="admin" placeholder="admin" required />
+              </label>
+              <div class="submit-row">
+                <button class="button button-secondary" type="submit">
+                  Show recovery question
+                </button>
+                <span id="recovery-start-status" class="status-text">
+                  Use your recovery answer to reset the password.
+                </span>
+              </div>
+            </form>
+
+            <form id="recovery-complete-form" class="order-form single-column-form" hidden>
+              <label>
+                Recovery question
+                <input id="recovery-question" readonly />
+              </label>
+              <label>
+                Recovery answer
+                <input name="recoveryAnswer" placeholder="Enter recovery answer" required />
+              </label>
+              <label>
+                New password
+                <input name="newPassword" type="password" placeholder="Minimum 6 characters" required />
+              </label>
+              <div class="submit-row">
+                <button class="button button-primary" type="submit">
+                  Reset password
+                </button>
+                <span id="recovery-complete-status" class="status-text">
+                  Your new password will be saved immediately.
+                </span>
+              </div>
+            </form>
+          </section>
+
+          <a class="button button-secondary" href="/">Back to customer site</a>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/admin-login.js"></script>
+  </body>
+</html>

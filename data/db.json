@@ -1,0 +1,826 @@
+{
+  "customers": [
+    {
+      "id": "4a4a40ea-dad9-4ee1-85e7-3aaedc41b565",
+      "name": "Smoke Test User",
+      "phone": "9876599999",
+      "createdAt": "2026-03-26T03:23:59.758Z",
+      "updatedAt": "2026-04-17T05:24:12.616Z"
+    },
+    {
+      "id": "983a4813-7514-4595-b245-4e7f1c0d6f4b",
+      "name": "saurav",
+      "phone": "6204189600",
+      "createdAt": "2026-04-17T05:06:44.930Z",
+      "updatedAt": "2026-04-17T05:27:37.101Z"
+    },
+    {
+      "id": "5150521e-c0f5-45d6-9c2d-eb2e24d58673",
+      "name": "OTP User",
+      "phone": "9876507777",
+      "createdAt": "2026-04-17T05:19:13.259Z",
+      "updatedAt": "2026-04-17T05:19:13.259Z"
+    }
+  ],
+  "dealers": [
+    {
+      "id": "dealer-hp-sector-62",
+      "name": "HP Gas Sector 62",
+      "brand": "HP Gas",
+      "phone": "9876500001",
+      "active": true,
+      "subscriptionStatus": "trial",
+      "location": {
+        "lat": 28.6283,
+        "lng": 77.3649
+      },
+      "pincode": "201309",
+      "bankAccount": "HPGAS-ACC-DEMO",
+      "createdAt": "2026-03-26T03:23:59.618Z"
+    }
+  ],
+  "riders": [
+    {
+      "id": "rider-amit",
+      "name": "Amit Kumar",
+      "phone": "9876501001",
+      "active": true,
+      "status": "on_delivery",
+      "vehicle": "bike",
+      "hasLeakDetector": true,
+      "hasDigitalScale": true,
+      "location": {
+        "lat": 28.6301,
+        "lng": 77.3624
+      },
+      "pincode": "201309",
+      "notificationRadiusKm": 7,
+      "lastSeenAt": "2026-04-17T05:24:12.626Z"
+    },
+    {
+      "id": "rider-sana",
+      "name": "Sana Khan",
+      "phone": "9876501002",
+      "active": true,
+      "status": "available",
+      "vehicle": "bike",
+      "hasLeakDetector": true,
+      "hasDigitalScale": true,
+      "location": {
+        "lat": 28.6264,
+        "lng": 77.3708
+      },
+      "pincode": "201309",
+      "notificationRadiusKm": 5,
+      "lastSeenAt": "2026-04-17T05:28:20.004Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "2ef75a9b-0ac9-4577-9a0f-9b5b3fd45444",
+      "customerId": "4a4a40ea-dad9-4ee1-85e7-3aaedc41b565",
+      "dealerId": "dealer-hp-sector-62",
+      "riderId": "rider-amit",
+      "status": "otp_verified",
+      "paymentStatus": "paid",
+      "source": "pwa",
+      "address": "Flat 12, Sector 62, Noida",
+      "pincode": "201309",
+      "location": {
+        "lat": 28.6295,
+        "lng": 77.3652
+      },
+      "requestedAt": "2026-03-26T03:23:59.760Z",
+      "acceptedAt": "2026-03-26T03:23:59.769Z",
+      "deliveredAt": null,
+      "otpCode": "695858",
+      "otpVerifiedAt": "2026-03-26T03:23:59.786Z",
+      "premiumSafety": true,
+      "gasBackGuarantee": true,
+      "emptyExchange": false,
+      "notes": "",
+      "nearbyRiderIds": [
+        "rider-amit",
+        "rider-sana"
+      ],
+      "amounts": {
+        "customerFees": {
+          "convenienceFee": 20,
+          "safetyPremiumFee": 30,
+          "gasBackGuaranteeFee": 10,
+          "emptyExchangeHandlingFee": 0
+        },
+        "customerFeeTotal": 60,
+        "customerTotal": 960,
+        "dealerShareGross": 900,
+        "providerCommission": 18,
+        "dealerSettlementNet": 882,
+        "riderPayout": 30,
+        "platformRevenue": 48
+      },
+      "paymentOrder": {
+        "mode": "mock",
+        "providerOrderId": "mock_2ef75a9b-0ac9-4577-9a0f-9b5b3fd45444",
+        "amount": 960,
+        "currency": "INR",
+        "notes": {
+          "dealerId": "dealer-hp-sector-62",
+          "riderId": "rider-amit"
+        }
+      },
+      "payment": {
+        "providerOrderId": "mock_2ef75a9b-0ac9-4577-9a0f-9b5b3fd45444",
+        "providerPaymentId": "pay_2ef75a9b-0ac9-4577-9a0f-9b5b3fd45444",
+        "paymentMode": "upi",
+        "paidAt": "2026-03-26T03:23:59.811Z"
+      }
+    },
+    {
+      "id": "8480ab32-4b04-4dce-9c42-724f4a31ee8f",
+      "customerId": "4a4a40ea-dad9-4ee1-85e7-3aaedc41b565",
+      "dealerId": "dealer-hp-sector-62",
+      "riderId": "rider-amit",
+      "status": "otp_verified",
+      "paymentStatus": "paid",
+      "source": "pwa",
+      "address": "Flat 12, Sector 62, Noida",
+      "pincode": "201309",
+      "location": {
+        "lat": 28.6295,
+        "lng": 77.3652
+      },
+      "requestedAt": "2026-04-17T04:36:08.239Z",
+      "acceptedAt": "2026-04-17T04:36:08.252Z",
+      "deliveredAt": null,
+      "otpCode": "911785",
+      "otpVerifiedAt": "2026-04-17T04:36:08.267Z",
+      "premiumSafety": true,
+      "gasBackGuarantee": true,
+      "emptyExchange": false,
+      "notes": "",
+      "nearbyRiderIds": [
+        "rider-sana"
+      ],
+      "amounts": {
+        "customerFees": {
+          "convenienceFee": 20,
+          "safetyPremiumFee": 30,
+          "gasBackGuaranteeFee": 10,
+          "emptyExchangeHandlingFee": 0
+        },
+        "customerFeeTotal": 60,
+        "customerTotal": 960,
+        "dealerShareGross": 900,
+        "providerCommission": 18,
+        "dealerSettlementNet": 882,
+        "riderPayout": 30,
+        "platformRevenue": 48
+      },
+      "paymentOrder": {
+        "mode": "mock",
+        "providerOrderId": "mock_8480ab32-4b04-4dce-9c42-724f4a31ee8f",
+        "amount": 960,
+        "currency": "INR",
+        "notes": {
+          "dealerId": "dealer-hp-sector-62",
+          "riderId": "rider-amit"
+        }
+      },
+      "payment": {
+        "providerOrderId": "mock_8480ab32-4b04-4dce-9c42-724f4a31ee8f",
+        "providerPaymentId": "pay_8480ab32-4b04-4dce-9c42-724f4a31ee8f",
+        "paymentMode": "upi",
+        "paidAt": "2026-04-17T04:36:08.286Z"
+      }
+    },
+    {
+      "id": "4897c78f-12dc-4666-9ce7-c2cc676c4831",
+      "customerId": "4a4a40ea-dad9-4ee1-85e7-3aaedc41b565",
+      "dealerId": "dealer-hp-sector-62",
+      "riderId": "rider-amit",
+      "status": "otp_verified",
+      "paymentStatus": "paid",
+      "source": "pwa",
+      "address": "Flat 12, Sector 62, Noida",
+      "pincode": "201309",
+      "location": {
+        "lat": 28.6295,
+        "lng": 77.3652
+      },
+      "requestedAt": "2026-04-17T04:52:05.741Z",
+      "acceptedAt": "2026-04-17T04:52:05.747Z",
+      "deliveredAt": null,
+      "otpCode": "118401",
+      "otpVerifiedAt": "2026-04-17T04:52:05.752Z",
+      "premiumSafety": true,
+      "gasBackGuarantee": true,
+      "emptyExchange": false,
+      "notes": "",
+      "nearbyRiderIds": [
+        "rider-sana"
+      ],
+      "amounts": {
+        "customerFees": {
+          "convenienceFee": 20,
+          "safetyPremiumFee": 30,
+          "gasBackGuaranteeFee": 10,
+          "emptyExchangeHandlingFee": 0
+        },
+        "customerFeeTotal": 60,
+        "customerTotal": 960,
+        "dealerShareGross": 900,
+        "providerCommission": 18,
+        "dealerSettlementNet": 882,
+        "riderPayout": 30,
+        "platformRevenue": 48
+      },
+      "paymentOrder": {
+        "mode": "mock",
+        "providerOrderId": "mock_4897c78f-12dc-4666-9ce7-c2cc676c4831",
+        "amount": 960,
+        "currency": "INR",
+        "notes": {
+          "dealerId": "dealer-hp-sector-62",
+          "riderId": "rider-amit"
+        }
+      },
+      "payment": {
+        "providerOrderId": "mock_4897c78f-12dc-4666-9ce7-c2cc676c4831",
+        "providerPaymentId": "pay_4897c78f-12dc-4666-9ce7-c2cc676c4831",
+        "paymentMode": "upi",
+        "paidAt": "2026-04-17T04:52:05.763Z"
+      }
+    },
+    {
+      "id": "e2f86120-db3b-4996-93f2-28808771ede4",
+      "customerId": "4a4a40ea-dad9-4ee1-85e7-3aaedc41b565",
+      "dealerId": "dealer-hp-sector-62",
+      "riderId": "rider-amit",
+      "status": "accepted",
+      "paymentStatus": "pending",
+      "source": "pwa",
+      "address": "Flat 12, Sector 62, Noida",
+      "pincode": "201309",
+      "location": {
+        "lat": 28.6295,
+        "lng": 77.3652
+      },
+      "requestedAt": "2026-04-17T04:57:01.364Z",
+      "acceptedAt": "2026-04-17T04:57:01.375Z",
+      "deliveredAt": null,
+      "otpCode": "940737",
+      "otpVerifiedAt": null,
+      "premiumSafety": true,
+      "gasBackGuarantee": true,
+      "emptyExchange": false,
+      "notes": "",
+      "nearbyRiderIds": [
+        "rider-sana"
+      ],
+      "amounts": {
+        "customerFees": {
+          "convenienceFee": 20,
+          "safetyPremiumFee": 30,
+          "gasBackGuaranteeFee": 10,
+          "emptyExchangeHandlingFee": 0
+        },
+        "customerFeeTotal": 60,
+        "customerTotal": 960,
+        "dealerShareGross": 900,
+        "providerCommission": 18,
+        "dealerSettlementNet": 882,
+        "riderPayout": 30,
+        "platformRevenue": 48
+      }
+    },
+    {
+      "id": "ba121cfe-7935-49e1-9c8e-236172330a94",
+      "customerId": "4a4a40ea-dad9-4ee1-85e7-3aaedc41b565",
+      "dealerId": "dealer-hp-sector-62",
+      "riderId": "rider-amit",
+      "status": "otp_verified",
+      "paymentStatus": "paid",
+      "source": "pwa",
+      "address": "Flat 12, Sector 62, Noida",
+      "pincode": "201309",
+      "location": {
+        "lat": 28.6295,
+        "lng": 77.3652
+      },
+      "requestedAt": "2026-04-17T04:57:26.061Z",
+      "acceptedAt": "2026-04-17T04:57:26.082Z",
+      "deliveredAt": null,
+      "otpCode": "481333",
+      "otpVerifiedAt": "2026-04-17T04:57:26.091Z",
+      "premiumSafety": true,
+      "gasBackGuarantee": true,
+      "emptyExchange": false,
+      "notes": "",
+      "nearbyRiderIds": [
+        "rider-sana"
+      ],
+      "amounts": {
+        "customerFees": {
+          "convenienceFee": 20,
+          "safetyPremiumFee": 30,
+          "gasBackGuaranteeFee": 10,
+          "emptyExchangeHandlingFee": 0
+        },
+        "customerFeeTotal": 60,
+        "customerTotal": 960,
+        "dealerShareGross": 900,
+        "providerCommission": 18,
+        "dealerSettlementNet": 882,
+        "riderPayout": 30,
+        "platformRevenue": 48
+      },
+      "paymentOrder": {
+        "mode": "mock",
+        "providerOrderId": "mock_ba121cfe-7935-49e1-9c8e-236172330a94",
+        "amount": 960,
+        "currency": "INR",
+        "notes": {
+          "dealerId": "dealer-hp-sector-62",
+          "riderId": "rider-amit"
+        }
+      },
+      "payment": {
+        "providerOrderId": "mock_ba121cfe-7935-49e1-9c8e-236172330a94",
+        "providerPaymentId": "pay_ba121cfe-7935-49e1-9c8e-236172330a94",
+        "paymentMode": "upi",
+        "paidAt": "2026-04-17T04:57:26.108Z"
+      }
+    },
+    {
+      "id": "e4f979de-5f4a-4055-b17e-2d6ab39df535",
+      "customerId": "983a4813-7514-4595-b245-4e7f1c0d6f4b",
+      "dealerId": "dealer-hp-sector-62",
+      "riderId": "rider-amit",
+      "status": "delivered",
+      "paymentStatus": "paid",
+      "source": "pwa",
+      "address": "darbhanga",
+      "pincode": "846005",
+      "location": {
+        "lat": 26.181757,
+        "lng": 85.840151
+      },
+      "requestedAt": "2026-04-17T05:06:44.931Z",
+      "acceptedAt": "2026-04-17T05:07:36.335Z",
+      "deliveredAt": "2026-04-17T05:07:48.017Z",
+      "otpCode": "826620",
+      "otpVerifiedAt": "2026-04-17T05:07:42.426Z",
+      "premiumSafety": true,
+      "gasBackGuarantee": true,
+      "emptyExchange": false,
+      "notes": "call before arrival",
+      "nearbyRiderIds": [],
+      "amounts": {
+        "customerFees": {
+          "convenienceFee": 20,
+          "safetyPremiumFee": 30,
+          "gasBackGuaranteeFee": 10,
+          "emptyExchangeHandlingFee": 0
+        },
+        "customerFeeTotal": 60,
+        "customerTotal": 960,
+        "dealerShareGross": 900,
+        "providerCommission": 18,
+        "dealerSettlementNet": 882,
+        "riderPayout": 30,
+        "platformRevenue": 48
+      },
+      "paymentOrder": {
+        "mode": "mock",
+        "providerOrderId": "mock_e4f979de-5f4a-4055-b17e-2d6ab39df535",
+        "amount": 960,
+        "currency": "INR",
+        "notes": {
+          "dealerId": "dealer-hp-sector-62",
+          "riderId": "rider-amit"
+        }
+      },
+      "payment": {
+        "providerOrderId": "mock_e4f979de-5f4a-4055-b17e-2d6ab39df535",
+        "providerPaymentId": "pay_e4f979de-5f4a-4055-b17e-2d6ab39df535",
+        "paymentMode": "upi",
+        "paidAt": "2026-04-17T05:07:46.493Z"
+      }
+    },
+    {
+      "id": "d024c093-98b9-45c3-bb7e-48e79558b7de",
+      "customerId": "4a4a40ea-dad9-4ee1-85e7-3aaedc41b565",
+      "dealerId": "dealer-hp-sector-62",
+      "riderId": "rider-amit",
+      "status": "otp_verified",
+      "paymentStatus": "paid",
+      "source": "pwa",
+      "address": "Flat 12, Sector 62, Noida",
+      "pincode": "201309",
+      "location": {
+        "lat": 28.6295,
+        "lng": 77.3652
+      },
+      "requestedAt": "2026-04-17T05:19:12.636Z",
+      "acceptedAt": "2026-04-17T05:19:12.656Z",
+      "deliveredAt": null,
+      "otpCode": "167897",
+      "otpVerifiedAt": "2026-04-17T05:19:12.665Z",
+      "premiumSafety": true,
+      "gasBackGuarantee": true,
+      "emptyExchange": false,
+      "notes": "",
+      "nearbyRiderIds": [
+        "rider-amit",
+        "rider-sana"
+      ],
+      "amounts": {
+        "customerFees": {
+          "convenienceFee": 20,
+          "safetyPremiumFee": 30,
+          "gasBackGuaranteeFee": 10,
+          "emptyExchangeHandlingFee": 0
+        },
+        "customerFeeTotal": 60,
+        "customerTotal": 960,
+        "dealerShareGross": 900,
+        "providerCommission": 18,
+        "dealerSettlementNet": 882,
+        "riderPayout": 30,
+        "platformRevenue": 48
+      },
+      "paymentOrder": {
+        "mode": "mock",
+        "providerOrderId": "mock_d024c093-98b9-45c3-bb7e-48e79558b7de",
+        "amount": 960,
+        "currency": "INR",
+        "notes": {
+          "dealerId": "dealer-hp-sector-62",
+          "riderId": "rider-amit"
+        }
+      },
+      "payment": {
+        "providerOrderId": "mock_d024c093-98b9-45c3-bb7e-48e79558b7de",
+        "providerPaymentId": "pay_d024c093-98b9-45c3-bb7e-48e79558b7de",
+        "paymentMode": "upi",
+        "paidAt": "2026-04-17T05:19:12.682Z"
+      }
+    },
+    {
+      "id": "66134441-0633-4073-9f48-8cfeb464dd6d",
+      "customerId": "5150521e-c0f5-45d6-9c2d-eb2e24d58673",
+      "dealerId": "dealer-hp-sector-62",
+      "riderId": null,
+      "status": "pending_dispatch",
+      "paymentStatus": "pending",
+      "source": "pwa",
+      "address": "Flat 12, Sector 62, Noida",
+      "pincode": "201309",
+      "location": {
+        "lat": 28.6295,
+        "lng": 77.3652
+      },
+      "requestedAt": "2026-04-17T05:19:13.259Z",
+      "acceptedAt": null,
+      "deliveredAt": null,
+      "otpCode": "436987",
+      "otpVerifiedAt": null,
+      "premiumSafety": true,
+      "gasBackGuarantee": true,
+      "emptyExchange": false,
+      "notes": "",
+      "nearbyRiderIds": [
+        "rider-sana"
+      ],
+      "amounts": {
+        "customerFees": {
+          "convenienceFee": 20,
+          "safetyPremiumFee": 30,
+          "gasBackGuaranteeFee": 10,
+          "emptyExchangeHandlingFee": 0
+        },
+        "customerFeeTotal": 60,
+        "customerTotal": 960,
+        "dealerShareGross": 900,
+        "providerCommission": 18,
+        "dealerSettlementNet": 882,
+        "riderPayout": 30,
+        "platformRevenue": 48
+      }
+    },
+    {
+      "id": "5667459c-e5d6-4afc-b0de-7fe69cbad705",
+      "customerId": "4a4a40ea-dad9-4ee1-85e7-3aaedc41b565",
+      "dealerId": "dealer-hp-sector-62",
+      "riderId": "rider-amit",
+      "status": "otp_verified",
+      "paymentStatus": "paid",
+      "source": "pwa",
+      "address": "Flat 12, Sector 62, Noida",
+      "pincode": "201309",
+      "location": {
+        "lat": 28.6295,
+        "lng": 77.3652
+      },
+      "requestedAt": "2026-04-17T05:24:12.616Z",
+      "acceptedAt": "2026-04-17T05:24:12.626Z",
+      "deliveredAt": null,
+      "otpCode": "792453",
+      "otpVerifiedAt": "2026-04-17T05:24:12.633Z",
+      "premiumSafety": true,
+      "gasBackGuarantee": true,
+      "emptyExchange": false,
+      "notes": "",
+      "nearbyRiderIds": [
+        "rider-sana"
+      ],
+      "amounts": {
+        "customerFees": {
+          "convenienceFee": 20,
+          "safetyPremiumFee": 30,
+          "gasBackGuaranteeFee": 10,
+          "emptyExchangeHandlingFee": 0
+        },
+        "customerFeeTotal": 60,
+        "customerTotal": 960,
+        "dealerShareGross": 900,
+        "providerCommission": 18,
+        "dealerSettlementNet": 882,
+        "riderPayout": 30,
+        "platformRevenue": 48
+      },
+      "paymentOrder": {
+        "mode": "mock",
+        "providerOrderId": "mock_5667459c-e5d6-4afc-b0de-7fe69cbad705",
+        "amount": 960,
+        "currency": "INR",
+        "notes": {
+          "dealerId": "dealer-hp-sector-62",
+          "riderId": "rider-amit"
+        }
+      },
+      "payment": {
+        "providerOrderId": "mock_5667459c-e5d6-4afc-b0de-7fe69cbad705",
+        "providerPaymentId": "pay_5667459c-e5d6-4afc-b0de-7fe69cbad705",
+        "paymentMode": "upi",
+        "paidAt": "2026-04-17T05:24:12.644Z"
+      }
+    },
+    {
+      "id": "52b1dcfa-66fe-46df-b9c3-c9dd6e385213",
+      "customerId": "983a4813-7514-4595-b245-4e7f1c0d6f4b",
+      "dealerId": "dealer-hp-sector-62",
+      "riderId": "rider-sana",
+      "status": "delivered",
+      "paymentStatus": "paid",
+      "source": "pwa",
+      "address": "mabbi chowk",
+      "pincode": "846005",
+      "location": {
+        "lat": 28.6295,
+        "lng": 77.3652
+      },
+      "requestedAt": "2026-04-17T05:27:37.102Z",
+      "acceptedAt": "2026-04-17T05:28:11.785Z",
+      "deliveredAt": "2026-04-17T05:28:20.004Z",
+      "otpCode": "486899",
+      "otpVerifiedAt": "2026-04-17T05:28:18.243Z",
+      "premiumSafety": true,
+      "gasBackGuarantee": true,
+      "emptyExchange": false,
+      "notes": "call before arrival",
+      "nearbyRiderIds": [
+        "rider-sana"
+      ],
+      "amounts": {
+        "customerFees": {
+          "convenienceFee": 20,
+          "safetyPremiumFee": 30,
+          "gasBackGuaranteeFee": 10,
+          "emptyExchangeHandlingFee": 0
+        },
+        "customerFeeTotal": 60,
+        "customerTotal": 960,
+        "dealerShareGross": 900,
+        "providerCommission": 18,
+        "dealerSettlementNet": 882,
+        "riderPayout": 30,
+        "platformRevenue": 48
+      },
+      "paymentOrder": {
+        "mode": "mock",
+        "providerOrderId": "mock_52b1dcfa-66fe-46df-b9c3-c9dd6e385213",
+        "amount": 960,
+        "currency": "INR",
+        "notes": {
+          "dealerId": "dealer-hp-sector-62",
+          "riderId": "rider-sana"
+        }
+      },
+      "payment": {
+        "providerOrderId": "mock_52b1dcfa-66fe-46df-b9c3-c9dd6e385213",
+        "providerPaymentId": "pay_52b1dcfa-66fe-46df-b9c3-c9dd6e385213",
+        "paymentMode": "upi",
+        "paidAt": "2026-04-17T05:28:16.962Z"
+      }
+    }
+  ],
+  "notifications": [
+    {
+      "id": "33af53f9-f3c0-410f-8893-8e7efbbbe64d",
+      "riderId": "rider-amit",
+      "orderId": "2ef75a9b-0ac9-4577-9a0f-9b5b3fd45444",
+      "type": "new_order_nearby",
+      "status": "unread",
+      "createdAt": "2026-03-26T03:23:59.760Z",
+      "distanceKm": 0.28
+    },
+    {
+      "id": "d2303f60-3bef-43d4-9976-6486a4a05afe",
+      "riderId": "rider-sana",
+      "orderId": "2ef75a9b-0ac9-4577-9a0f-9b5b3fd45444",
+      "type": "new_order_nearby",
+      "status": "unread",
+      "createdAt": "2026-03-26T03:23:59.760Z",
+      "distanceKm": 0.65
+    },
+    {
+      "id": "480dcf04-2e3a-4403-aa0b-e41aa227cdbb",
+      "riderId": "rider-sana",
+      "orderId": "8480ab32-4b04-4dce-9c42-724f4a31ee8f",
+      "type": "new_order_nearby",
+      "status": "unread",
+      "createdAt": "2026-04-17T04:36:08.239Z",
+      "distanceKm": 0.65
+    },
+    {
+      "id": "87b466ae-3dbf-4b16-9aad-71cb0883363b",
+      "riderId": "rider-sana",
+      "orderId": "4897c78f-12dc-4666-9ce7-c2cc676c4831",
+      "type": "new_order_nearby",
+      "status": "unread",
+      "createdAt": "2026-04-17T04:52:05.741Z",
+      "distanceKm": 0.65
+    },
+    {
+      "id": "01c2ad57-28d3-4c70-9eef-992ae6aefbca",
+      "riderId": "rider-sana",
+      "orderId": "e2f86120-db3b-4996-93f2-28808771ede4",
+      "type": "new_order_nearby",
+      "status": "unread",
+      "createdAt": "2026-04-17T04:57:01.364Z",
+      "distanceKm": 0.65
+    },
+    {
+      "id": "6113fd7c-b273-4c4d-b578-ea681dfb6cf5",
+      "riderId": "rider-sana",
+      "orderId": "ba121cfe-7935-49e1-9c8e-236172330a94",
+      "type": "new_order_nearby",
+      "status": "unread",
+      "createdAt": "2026-04-17T04:57:26.062Z",
+      "distanceKm": 0.65
+    },
+    {
+      "id": "fdca51bc-1ae6-4420-90ec-404cd4f7b167",
+      "riderId": "rider-amit",
+      "orderId": "d024c093-98b9-45c3-bb7e-48e79558b7de",
+      "type": "new_order_nearby",
+      "status": "unread",
+      "createdAt": "2026-04-17T05:19:12.636Z",
+      "distanceKm": 0.28
+    },
+    {
+      "id": "b4c41501-20bf-4552-a6bd-3f4ede4af483",
+      "riderId": "rider-sana",
+      "orderId": "d024c093-98b9-45c3-bb7e-48e79558b7de",
+      "type": "new_order_nearby",
+      "status": "unread",
+      "createdAt": "2026-04-17T05:19:12.636Z",
+      "distanceKm": 0.65
+    },
+    {
+      "id": "0c96b2f9-eff9-462c-8032-6ae939b3cc12",
+      "riderId": "rider-sana",
+      "orderId": "66134441-0633-4073-9f48-8cfeb464dd6d",
+      "type": "new_order_nearby",
+      "status": "unread",
+      "createdAt": "2026-04-17T05:19:13.259Z",
+      "distanceKm": 0.65
+    },
+    {
+      "id": "39c1a064-9fa2-4bc4-9d21-c4b7304c1f38",
+      "riderId": "rider-sana",
+      "orderId": "5667459c-e5d6-4afc-b0de-7fe69cbad705",
+      "type": "new_order_nearby",
+      "status": "unread",
+      "createdAt": "2026-04-17T05:24:12.616Z",
+      "distanceKm": 0.65
+    },
+    {
+      "id": "a1ed7e20-d2ad-47ac-9656-033278d61066",
+      "riderId": "rider-sana",
+      "orderId": "52b1dcfa-66fe-46df-b9c3-c9dd6e385213",
+      "type": "new_order_nearby",
+      "status": "unread",
+      "createdAt": "2026-04-17T05:27:37.102Z",
+      "distanceKm": 0.65
+    }
+  ],
+  "ledgerEntries": [
+    {
+      "id": "4ee8d25e-0c1d-4a2c-a41b-7bba8850d446",
+      "orderId": "2ef75a9b-0ac9-4577-9a0f-9b5b3fd45444",
+      "customerTotal": 960,
+      "dealerShareGross": 900,
+      "dealerSettlementNet": 882,
+      "riderPayout": 30,
+      "platformRevenue": 48,
+      "paymentStatus": "paid",
+      "createdAt": "2026-03-26T03:23:59.811Z"
+    },
+    {
+      "id": "70e9e450-2f2f-48b6-8a78-7214cd2098fb",
+      "orderId": "8480ab32-4b04-4dce-9c42-724f4a31ee8f",
+      "customerTotal": 960,
+      "dealerShareGross": 900,
+      "dealerSettlementNet": 882,
+      "riderPayout": 30,
+      "platformRevenue": 48,
+      "paymentStatus": "paid",
+      "createdAt": "2026-04-17T04:36:08.286Z"
+    },
+    {
+      "id": "fecb021a-e5d3-4f91-8496-9cf238db422d",
+      "orderId": "4897c78f-12dc-4666-9ce7-c2cc676c4831",
+      "customerTotal": 960,
+      "dealerShareGross": 900,
+      "dealerSettlementNet": 882,
+      "riderPayout": 30,
+      "platformRevenue": 48,
+      "paymentStatus": "paid",
+      "createdAt": "2026-04-17T04:52:05.763Z"
+    },
+    {
+      "id": "464b53e7-3aee-46e0-9d6f-7a323652950a",
+      "orderId": "ba121cfe-7935-49e1-9c8e-236172330a94",
+      "customerTotal": 960,
+      "dealerShareGross": 900,
+      "dealerSettlementNet": 882,
+      "riderPayout": 30,
+      "platformRevenue": 48,
+      "paymentStatus": "paid",
+      "createdAt": "2026-04-17T04:57:26.109Z"
+    },
+    {
+      "id": "0abec6e6-2d2d-4d93-a4fb-c4cd19e176a3",
+      "orderId": "e4f979de-5f4a-4055-b17e-2d6ab39df535",
+      "customerTotal": 960,
+      "dealerShareGross": 900,
+      "dealerSettlementNet": 882,
+      "riderPayout": 30,
+      "platformRevenue": 48,
+      "paymentStatus": "paid",
+      "createdAt": "2026-04-17T05:07:46.493Z"
+    },
+    {
+      "id": "d4eaea17-442b-455c-80ce-3fc08745bf2f",
+      "orderId": "d024c093-98b9-45c3-bb7e-48e79558b7de",
+      "customerTotal": 960,
+      "dealerShareGross": 900,
+      "dealerSettlementNet": 882,
+      "riderPayout": 30,
+      "platformRevenue": 48,
+      "paymentStatus": "paid",
+      "createdAt": "2026-04-17T05:19:12.682Z"
+    },
+    {
+      "id": "8f77f46b-d8d3-4d35-aabd-90368f34f68d",
+      "orderId": "5667459c-e5d6-4afc-b0de-7fe69cbad705",
+      "customerTotal": 960,
+      "dealerShareGross": 900,
+      "dealerSettlementNet": 882,
+      "riderPayout": 30,
+      "platformRevenue": 48,
+      "paymentStatus": "paid",
+      "createdAt": "2026-04-17T05:24:12.644Z"
+    },
+    {
+      "id": "eb902758-9613-45e4-994b-21b226ce0f16",
+      "orderId": "52b1dcfa-66fe-46df-b9c3-c9dd6e385213",
+      "customerTotal": 960,
+      "dealerShareGross": 900,
+      "dealerSettlementNet": 882,
+      "riderPayout": 30,
+      "platformRevenue": 48,
+      "paymentStatus": "paid",
+      "createdAt": "2026-04-17T05:28:16.962Z"
+    }
+  ],
+  "adminAuth": {
+    "username": "admin",
+    "passwordHash": "240ad151f091110c5a6f429a3779eb94:725f44809dfd76d937d12eaf304a7dddd8b1515cb04bc731679716ce6f5c268af9bf2f8d7d6ce1aff6695c7251229122106639fbc59cd6ff4a42271745ae7c6c",
+    "recoveryQuestion": "What is your admin recovery phrase?",
+    "recoveryAnswerHash": "e5af1ae5dccf5543690f199b04b8fbe3:e671a17f610ecffd35db55bc61b893dc9a9fa67025fa83f4ac5ef695918b3a06042fbba08ff8e30cd720804529cd9d73e54d35e67fe67a564a37b4b693a4d040",
+    "updatedAt": "2026-04-17T05:24:26.716Z"
+  }
+}

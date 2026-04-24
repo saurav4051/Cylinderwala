@@ -1,0 +1,114 @@
+Step 1: Core Team (The Decision Makers)
+ Day 1: Legal & Identity: Finalize the brand logo and register the domain (e.g.,
+cylendrawala.in).
+ Day 2: Partnership Pitch: The sales lead must visit 5–10 local LPG distributors. Don't
+ask for money; offer them free GPS tracking software in exchange for fulfilling your
+app's orders.
+ Day 3: Recruitment: Hire/Assign 5 "Pilot Riders" who own bikes. Provide them with a
+branded t-shirt and a digital weighing scale.
+ Day 4-7: Operations: Set up a WhatsApp Business API as a backup "One-Click"
+method while the app is being polished.
+Step 2: Tech Team (The Builders)
+ Day 1-2: Database & Backend: Setup a simple Node.js server. Create a "Live Orders"
+table where a new entry triggers a notification to all nearby riders.
+ Day 3-4: The Web Portal: Build a "Dispatcher Dashboard" for the owner. It should
+show a map with pins for every "Empty Cylinder" request.
+ Day 5: Payment Integration: Link Razorpay for UPI payments. Set up a "Split
+Payment" logic: ₹900 to Dealer, ₹30 to Rider, ₹45 to Gatemate Leanin.
+ Day 6-7: Beta Testing: Run 10 "Fake Orders" to ensure the GPS tracking and OTP
+verification work without crashing.
+Step 3: Customers & Dealers (The Users)
+ Dealer Strategy (The "Extra Income" Hook): Tell dealers: "We aren't your
+competitors; we are your delivery partners. We bring you orders from customers who
+usually buy from other agencies." Give them a tablet/phone with your Provider Portal
+pre-installed.
+ Customer Strategy (The "Fridge Magnet" Hack): Print 1,000 stickers/magnets with a
+QR code. Distribute them to households. The message: "Gas Khatam? Just Scan & Get
+it in 60 Mins."
+ The One-Click Experience: For the first week, allow customers to book via a "Quick-
+Form" on the website if the Android App is still in the "Review" stage by Google.
+Step 4: Unique Revenue Model (The "Owner's" Profit)
+To make your model "Unique" compared to a simple delivery charge, use the Cylendra Wala
+"Safety-First" Tier:
+1. The Convenience Fee (Standard): ₹20 per delivery (Base earning).
+2. The "Safety Check" Premium (Unique): Charge an extra ₹30. For this, the rider carries
+a leak detector and a weight scale. They provide a "Safety Certificate" on the app after
+installation. (Customers will gladly pay for safety).
+3. The Empty Exchange Fee: Charge a small "Handling Fee" if the customer’s empty
+cylinder is rusted or from a different brand (aggregator service).
+
+-- 1 of 4 --
+
+4. Dealer Subscription: After the first 100 successful orders, charge the dealer ₹499/month
+to keep using your "Live Tracking" tech for their own private orders.
+Execution Summary for the Week
+Day Focus 	Goal
+Mon Setup 	Logo, Domain, Core Team Roles.
+Tue Sales 	Sign 5 Dealers in one specific Pincode.
+Wed Dev 	Backend Ready & Map Integration.
+Thu Gear 	Buy Weighing Scales & Branded Vests.
+Fri Marketing Distribute 1,000 QR stickers in the target area.
+Sat Training 	Train Riders on using the App/OTP system.
+Sun LAUNCH First Live Order & Real-Time Earning.
+1. Core Team: The Dealer Agreement (Draft)
+Print this on Gatemate Leanin Private Limited Letterhead.
+Agreement Title: Digital Logistics & Aggregator Partnership
+Between: Gatemate Leanin Pvt Ltd (The Platform) and [Dealer Name] (The Provider).
+Key Terms:
+1. Service: The Platform will provide a "One-Click" booking interface and real-time GPS
+tracking for the Provider’s LPG cylinders.
+
+-- 2 of 4 --
+
+2. Commission: The Platform will charge a Convenience Fee of ₹[25] per delivery from the
+customer and a [2%] service commission from the Provider's margin.
+3. Payment: All digital payments collected via the App will be settled to the Provider’s
+bank account within 24–48 hours, after deducting the Platform's commission.
+4. Safety: The Provider guarantees that all cylinders supplied are authorized by
+[HP/Indane/Bharat Gas] and meet PESO safety standards.
+5. Termination: Either party can exit this agreement with a 7-day notice.
+2. Tech Team: The "One-Week" MVP Build
+Your developers must focus only on these three screens to hit the Sunday launch:
+ The "User Order" Screen: A simple Map + "Book Now" button.
+ The "Rider Accept" Screen: A notification that pops up when an order is near.
+ The "Admin Ledger": A simple table showing: Order ID | Amount | Dealer Share
+| Our Profit.
+Tech Tip: If the Android App takes too long for Play Store approval, have the team build a
+PWA (Progressive Web App). It looks like an app but runs in a mobile browser, allowing you
+to launch instantly without waiting for Google’s review.
+3. Customer & Dealer: The "Trust" Sequence
+To ensure customers actually use the "One-Click" feature:
+ The "Weight Challenge": Advertise that your riders carry a Digital Hanging Scale. If
+the weight is even 100g less than the fixed net weight, the delivery is free. This builds
+massive trust.
+ Dealer Incentive: Tell the dealer, "We handle the customer support." If a customer calls
+complaining about a delay, your Core Team handles the call, not the dealer. This saves
+them time and headache.
+4. Revenue Model: The "Unique" Earning Concept
+Beyond the standard commission, here is your "Owner's Secret" for higher margins:
+Revenue Stream 	Unique Value Add 	Earning
+Potential
+
+-- 3 of 4 --
+
+Standard Delivery One-click convenience. 	₹20/order
+Safety Audit Plus 	Rider checks for gas leaks with a soap-
+solution/detector.
+₹30/order
+Gas-Back
+Guarantee
+Insurance against "under-filled" cylinders. 	₹10/order
+Brand Placement 	Putting a "Kitchenware Brand" sticker on the
+cylinder.
+₹5/cylinder
+The 7-Day Countdown Calendar
+1. Monday: Sign 5 Dealers. Finalize the "Cylendra Wala" Logo.
+2. Tuesday: Backend Setup. Buy 5 Digital Scales and 5 Orange Vests.
+3. Wednesday: Frontend PWA/App Development. Setup UPI Payment Link.
+4. Thursday: Recruitment of 5 Riders. Distribution of 500 QR Stickers.
+5. Friday: "Dry Run" – Riders practice picking up and delivering "Dummy" cylinders.
+6. Saturday: Final Bug Fixes. Social Media Announcement.
+7. Sunday: LIVE LAUNCH. First order processed.
+
+-- 4 of 4 --
+
