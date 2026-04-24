@@ -559,3 +559,4 @@ app.get("/api/notifications/stream", requireAdmin, (req, res) => {
 });
 
 export { app };
+export default app;
